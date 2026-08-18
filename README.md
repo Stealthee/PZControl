@@ -76,3 +76,7 @@ Create, restore, delete, and reset the live save, entirely through the Pterodact
 | `requests` | Pterodactyl REST API |
 | `websocket-client` | Pterodactyl live console |
 | `paramiko` | SFTP file access |
+
+## License
+
+[MIT](LICENSE) — use it, mod it, ship it.
