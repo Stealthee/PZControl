@@ -80,3 +80,7 @@ Create, restore, delete, and reset the live save, entirely through the Pterodact
 ## License
 
 [MIT](LICENSE) — use it, mod it, ship it.
+
+## Support
+
+If this saved you some time, a thank-you is more than enough. If you'd like to buy me a coffee too, Cash App: **$j71rivera**. Never required, always appreciated.
