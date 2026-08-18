@@ -40,14 +40,17 @@ The `.ini` and `_SandboxVars.lua` paths are auto-discovered over SFTP on first c
 
 ## Features
 
-- **Players** — online/offline roster with join history, teleport, godmode, invisible, give item, set access level, kick, ban.
-- **Banned** — RCON ban list if the build supports it, otherwise falls back to reading the admin SQLite DB over SFTP.
-- **Files** — a general SFTP browser/editor for the server's files.
+- **Power bar** — Start/Restart/Stop/Kill and a one-click Save World, live RCON/SFTP connection status dots, and a red/green flash notice when a mod or the server build has an update waiting (needs a restart to apply).
+- **Players** — online/offline roster with join history. Right-click a player for teleport-to-another-player, godmode on/off, invisible on/off, give item, set access level, kick, or ban; offline entries can be removed from history.
+- **Banned** — RCON ban list if the build supports it, otherwise falls back to reading the admin SQLite DB over SFTP. Add/unban from the same tab.
+- **Console & Chat** — live raw console output plus an RCON command box; a separate Chat tab for sending messages (inbound player chat isn't parsed yet, see Known limitations — use the Console tab to see it in the raw log).
+- **Files** — a general SFTP browser/editor: navigate, edit files inline, upload files or a whole folder, rename, delete, and set permissions (recursively for folders).
 - **Backup** — see below.
 - **Server Settings** / **Sandbox Settings** — edit the `.ini` and `_SandboxVars.lua` through a form instead of raw text.
-- **Auto Restart** — daily-time or every-N-hours restarts, with a countdown warning broadcast to players.
-- **Broadcasts** — join messages and a restart-warning message, both templated.
-- **Mods** / **Browse Mods** — manage `WorkshopItems=`/`Mods=`, check installed mods against Steam Workshop for updates, search and add new mods.
+- **Auto Restart** — daily-time or every-N-hours restarts, with a templated warning broadcast 5 minutes and 1 minute out, then a final 20-second countdown.
+- **Broadcasts** — templated join messages, sent when a player's name appears in the RCON player list that wasn't there on the previous poll.
+- **Mods** — edit `WorkshopItems=`/`Mods=` directly, or use the Workshop Update Check table (compares installed mods against Steam Workshop, flags ones that changed or won't load, lets you Freeze/unfreeze or remove one, auto-runs on a timer if you want); also checks the dedicated server binary itself for a new build. Optional auto-restart when an update's available and the server is currently empty.
+- **Browse Mods** — search the Steam Workshop (needs a free Steam Web API key, one-click link to get one) and add results straight into your mod list.
 
 ### Backup tab
 
